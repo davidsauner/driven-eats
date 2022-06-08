@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@1,100&display=swap');
+body{
+    width: 500px;
+    margin: 0 20%;
+    box-sizing: border-box;
+}
+.topo{
+    width: 450px;
+    height: 92px;
+    background: #CF2B2B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-left: 20px;
+    text-align: left;
+}
+h1{
+    color: #FFFFFF;
+    font-family: 'Righteous', cursive;
+    font-size: 44px;
+    margin: 0px;
+    padding-top: 10px;
+}
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    color: #333333;
+}
+
+p{
+    font-family: 'Righteous', cursive;
+    margin: 0px;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+.pratos{
+    height: 240px;
+    background-color: aqua;
+    display: flex;
+    overflow: scroll;
+}
+.pratos div {
+    background-color: rgb(247, 247, 247);
+    border-radius: 5px;
+    height: 190px;
+    width: 152px;
+    padding: 15px 10px;
+    margin: 0 5px;
+}
+.pratos img {
+    width: 144px;
+    right: 47px;
+    border-radius: 5px;
+}
+.pratos h3{
+    color: black;
+    font-size: 16px;
+    margin: 5px;
+
+}
+.pratos p{
+    color: gray;
+    font-size: 15px;
+}
