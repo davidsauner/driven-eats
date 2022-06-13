@@ -13,6 +13,9 @@ body{
     padding-left: 20px;
     text-align: left;
 }
+.tudo{
+
+}
 h1{
     color: #FFFFFF;
     font-family: 'Righteous', cursive;
@@ -37,7 +40,6 @@ p{
     height: 280px;
     display: flex;
     overflow: scroll;
-    background-color:blue ;
     
 }
 .pratos div {
@@ -52,13 +54,15 @@ p{
 .pratos img {
     object-fit:cover;
     width: 144px;
-    right: 47px;
+    height: 80px;
     border-radius: 5px;
 }
 .pratos h3{
+    font-family: 'Roboto', sans-serif;
     color: black;
     font-size: 16px;
     margin: 5px;
+    font-weight: 700;
 
 }
 .pratos p{
@@ -103,9 +107,12 @@ background: #50D074;
 box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
 border-radius: 9px;
 flex-direction: column;
-justify-content: center;
+justify-content: flex-start;
 display: flex;
 align-items: center;
+position: relative;
+
+
 
 }
 .certo{
@@ -120,8 +127,19 @@ align-items: center;
     color: #32B72F;;
 }
 
-h3{
-margin: 15px;
+.confirmar h3{
+margin: 10px;
 font-size: 22px;
 color: white;
+left: 10px;
+}
+.confirmar span{
+    position: absolute;
+    right: 15px;
+}
+.confirmar p {
+    font-size: 13px;
+    color: white;
+    margin: 0px;
+    
 }

@@ -15,74 +15,74 @@
     </div>
     <h2>primerio seu prato</h2>
     <div  class="pratos">
-        <div onclick='teste(this)' class="escolha">
+        <div onclick='teste(this,"fango com limão", 20.00)' class="escolha">
             <img  src="/img/frango-com-limão.jpg" alt="frango-com-limão">
             <h3>Frango com limão</h3>
             <p>vem o frango e assado</p>
-            <h3>R$20,00</h3>
+            <h3>R$ <span class="preco-prato"> 20,00</span></h3>
                 <ion-icon class="icon none" name="checkmark-circle"></ion-icon>
         </div>
-        <div onclick='teste(this)' class="escolha">
-            <img  src="/img/frango-com-limão.jpg" alt="frango-com-limão">
-            <h3>Frango com limão</h3>
-            <p>vem o frango e assado</p>
-            <h3>R$20,00</h3>
+        <div onclick='teste(this, "Costela assada",50.00)' class="escolha">
+            <img  src="/img/costela.jpg" alt="frango-com-limão">
+            <h3>Costela assada</h3>
+            <p>Costela assada na brasa</p>
+            <h3>R$ <span class="preco-prato" >50,00</span>
                 <ion-icon class="icon none" name="checkmark-circle"></ion-icon>
         </div>
-        <div onclick='teste(this)' class="escolha">
-            <img  src="/img/frango-com-limão.jpg" alt="frango-com-limão">
-            <h3>Frango com limão</h3>
-            <p>vem o frango e assado</p>
-            <h3>R$20,00</h3>
+        <div onclick='teste(this, "feijoada",40.00)' class="escolha">
+            <img  src="/img/feijoada.jpg" alt="frango-com-limão">
+            <h3>Feijoada</h3>
+            <p>Feijoada tradicional brasileira</p>
+            <h3>R$ <span class="preco-prato" >40,00</span>
                 <ion-icon  class="icon none" name="checkmark-circle"></ion-icon>
         </div>
     </div>
     <h2>agora refrigerante</h2>
     <div class="pratos refri">
-        <div onclick='coca(this)'class="escolha">
+        <div onclick='coca(this,"coca-cola lata 350ml",3.00)'class="escolha">
             <img  src="/img/coca.jpg" alt="frango-com-limão">
             <h3>coca-cola
             </h3>
-            <p>lata 350ml</p>
-            <h3>R$3,50</h3>
+            <p>coca-cola em lata 350ml</p>
+            <h3>R$ <span class="preco-refri" >3,00</span>
                 <ion-icon  class="icon none" name="checkmark-circle"></ion-icon>
         </div>
-        <div onclick='coca(this)' class="escolha">
-            <img  src="/img/coca.jpg" alt="frango-com-limão">
+        <div onclick='coca(this,"coca-cola zero 350ml",3.50)' class="escolha">
+            <img  src="/img/coca-zero.jpg" alt="frango-com-limão">
             <h3>coca-cola zero</h3>
-            <p>zero lata 350ml</p>
-            <h3>R$3,50</h3>
+            <p>coca-cola zero lata 350ml</p>
+            <h3>R$ <span class="preco-refri" >3,00</span>
                 <ion-icon class="icon none" name="checkmark-circle"></ion-icon>
         </div>
-        <div onclick='coca(this)' class="escolha">
-            <img  src="/img/coca.jpg" alt="frango-com-limão">
+        <div onclick='coca(this,"suco lata 350ml",4.00)' class="escolha">
+            <img  src="/img/suco.jpg" alt="frango-com-limão">
             <h3>suco pessego</h3>
-            <p>suco de 350ml sabor pessego</p>
-            <h3>R$4,00</h3>
+            <p>suco de 300ml sabor pessego</p>
+            <h3>R$ <span class="preco-refri" >4,00</span>
                 <ion-icon  class="icon none" name="checkmark-circle"></ion-icon>
         </div>
     </div>
     <h2>agora sobremesa</h2>
     <div class="pratos sobre">
-        <div onclick='pudim(this)' class="escolha">
+        <div onclick='pudim(this,"pudim de leite",20.00)' class="escolha">
             <img  src="/img/pudim.jpg" alt="frango-com-limão">
             <h3>Pudim de leite</h3>
             <p>pudim a base de leite condensado</p>
-            <h3>R$15,00</h3>
+            <h3>R$ <span class="preco-sobre" >20,00</span>
                 <ion-icon  class="icon none" name="checkmark-circle"></ion-icon>
         </div>
-        <div onclick='pudim(this)' class="escolha">
-            <img  src="/img/pudim.jpg" alt="frango-com-limão">
-            <h3>Pudim de pão</h3>
-            <p>pudim a base de pão</p>
-            <h3>R$10,00</h3>
+        <div onclick='pudim(this,"mouse de morango",22.00)' class="escolha">
+            <img  src="/img/morango.jpg" alt="frango-com-limão">
+            <h3>mouse de morango</h3>
+            <p>mouse sabor morango com pedaços da fruta</p>
+            <h3>R$ <span class="preco-sobre" >22,00</span>
                 <ion-icon class="icon none" name="checkmark-circle"></ion-icon>
         </div>
-        <div onclick='pudim(this)' class="escolha">
-            <img  src="/img/pudim.jpg" alt="frango-com-limão">
+        <div onclick='pudim(this,"torta de limão",25.00)' class="escolha">
+            <img  src="/img/torta.jpg" alt="frango-com-limão">
             <h3>torta</h3>
-            <p>torta de limão</p>
-            <h3>R$25,00</h3>
+            <p>torta de limão com pequenas raspas de chocolate</p>
+            <h3>R$ <span class="preco-sobre" >25,00</span>
                 <ion-icon  class="icon none" name="checkmark-circle"></ion-icon>
         </div>
 
@@ -95,10 +95,13 @@
     <div class="aba none">
     <div class="confirmar">
         <h3>confirmar seu pedido</h3>
-        <h3>pedido prato</h3>
-        <h3>pedido refri</h3>
-        <h3>pedido sobremesa</h3>
-        <h3>Valor Total</h3>
+        <h3 >pedido prato         <span class="preco1">0,0</span></h3>
+        <p class="nome1" >lalala</p>
+        <h3 >pedido refri         <span class="preco2">0,0</span></h3>
+        <p class="nome2">lalala</p>
+        <h3 >pedido sobremesa    <span class="preco3">0,0</span></h3>
+        <p class="nome3" >lalala</p>
+        <h3 >Valor Total         <span class="total">0,0</span></h3>
         <div class="certo">
             Tudo certo, pode pedir!
         </div>
